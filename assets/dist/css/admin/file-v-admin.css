@@ -1,0 +1,344 @@
+:root {
+  --color-primary-100: #af2108;
+  --color-primary-80: #e02b0a;
+  --color-primary-60: #f54627;
+  --color-primary-40: #f77159;
+  --color-secondary-100: #f08d00;
+  --color-secondary-80: #ffa524;
+  --color-secondary-60: #ffba57;
+  --color-btn: #ff6b25;
+  --color-dark: #292929;
+  --color-light: #ffe4bd;
+  --color-muted: #585858;
+
+  --border-radius-1: 10px;
+  --border-radius-2: 20px;
+  --border-radius-3: 30px;
+
+  --box-shadow: 0px 51px 20px rgba(0, 0, 0, 0.01),
+    0px 29px 17px rgba(0, 0, 0, 0.05), 0px 13px 13px rgba(0, 0, 0, 0.09),
+    0px 3px 7px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  appearance: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  background-color: #f5f5f5;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+p {
+  color: var(--color-dark);
+}
+
+b {
+  color: var(--color-dark);
+}
+
+.primary-color {
+  color: var(--color-primary-80);
+}
+
+.secondary-color {
+  color: var(--color-secondary-100);
+}
+
+.third-color {
+  color: #ff6b25;
+}
+
+.succes-color {
+  color: #4ed273;
+}
+
+.container {
+  padding: 2rem;
+}
+
+/* MAIN ======================================== */
+
+main {
+  margin-top: 1.4rem;
+}
+
+main .row-1 {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+/* =========================== Table */
+
+main .room-order {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+main .room-order .header-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 2px solid #292929;
+}
+
+main .room-order .header-room a button {
+  background: var(--color-primary-60);
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  border-radius: var(--border-radius-1);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+main .room-order .header-room a button:hover {
+  width: 11rem;
+  background: var(--color-primary-80);
+  cursor: pointer;
+}
+
+main .room-order table {
+  background: white;
+  margin: 2rem 0;
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+}
+
+main table thead {
+  background: #e0e0e0;
+  height: 3rem;
+}
+
+main table tbody td {
+  height: 3rem;
+  border-bottom: 1px solid #292929;
+  color: var(--color-dark);
+}
+
+main table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+main table tbody td a {
+  background: var(--color-primary-40);
+  color: white;
+  text-align: center;
+  padding: 5px 1rem;
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.btn-submit {
+  background: var(--color-primary-60);
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  border-radius: var(--border-radius-1);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  width: 11rem;
+  background: var(--color-primary-80);
+  cursor: pointer;
+}
+
+.btn-disabled {
+  background: var(--color-muted);
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  border-radius: var(--border-radius-1);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
+}
+
+.header-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header-room a span {
+  padding: 0.5rem;
+  background: var(--color-secondary-100);
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+}
+
+.icon-button {
+  color: var(--color-light);
+  background-color: var(--color-primary-60);
+  padding: 0.2rem;
+  width: fit-content;
+  display: flex;
+  border-radius: var(--border-radius-1);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.header-room a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-btn);
+  padding: 0.2rem 1rem 0.2rem 0;
+  border-radius: var(--border-radius-3);
+  -webkit-border-radius: var(--border-radius-3);
+  -moz-border-radius: var(--border-radius-3);
+  -ms-border-radius: var(--border-radius-3);
+  -o-border-radius: var(--border-radius-3);
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+  color: white;
+  font-weight: 700;
+}
+
+.header-room a:hover {
+  background: var(--color-secondary-80);
+}
+
+.header-room a:hover span {
+  background: var(--color-secondary-60);
+}
+
+.icon-button:hover {
+  background-color: #af2108;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.table-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.acc .siap {
+  padding: 0.5rem 3rem;
+  background-color: #e02b0a;
+  color: white;
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+}

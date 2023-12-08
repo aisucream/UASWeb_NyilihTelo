@@ -1,0 +1,449 @@
+:root {
+  --pr-color: #e02b0a;
+  --sc-color: #ffa524;
+  --sc-color2: #f08d00;
+  --sc-dis-color: #ffba57;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe8e8;
+}
+
+* {
+  z-index: 2;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 3;
+}
+
+.bg-transparent {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.navbar-color {
+  background-color: #e02b0a;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+.nav-link:focus {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button-login {
+  width: 112px;
+  height: 35px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--pr-color);
+}
+
+.button-login:hover {
+  opacity: 70%;
+}
+
+/* --------------------- */
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(
+    221.73deg,
+    #c1272d -0.71%,
+    #f08d00 85.21%,
+    #eaa31a 106.75%
+  );
+  width: 100%;
+  height: 100vh;
+}
+
+.img-back {
+  z-index: 1;
+  mix-blend-mode: soft-light;
+}
+
+.hero-tag h1 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 60px;
+  font-size: 45px;
+  letter-spacing: 0.025em;
+  text-transform: capitalize;
+}
+
+.hero-tag p {
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 120px;
+}
+
+.button-pr {
+  width: 168px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background-color: var(--pr-color);
+  color: white;
+}
+
+/* --------------------- */
+
+/* Layanan Section */
+#layanan {
+  padding: 115px 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--pr-color);
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #292929;
+}
+
+.card-layanan {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 194px 77px rgba(0, 0, 0, 0.01),
+    0px 109px 65px rgba(0, 0, 0, 0.05), 0px 48px 48px rgba(0, 0, 0, 0.09),
+    0px 12px 27px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+
+.card-1 {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card-2 {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card-layanan:hover {
+  background: linear-gradient(211.97deg, #e02b0a 19.22%, #f04d00 54.4%);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/* --------------------- */
+
+/* Asset Section */
+#asset {
+  background: url(../../../images/landing\ page/bg2.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.sub {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.flex_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 15px;
+  background: rgba(240, 141, 0, 0.8);
+  border-radius: 0px 10px 10px 10px;
+  -webkit-border-radius: 0px 10px 10px 10px;
+  -moz-border-radius: 0px 10px 10px 10px;
+  -ms-border-radius: 0px 10px 10px 10px;
+  -o-border-radius: 0px 10px 10px 10px;
+}
+
+.selection-items {
+  margin-left: 30px;
+}
+
+.selection-items h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+}
+
+.selection-items p {
+  font-size: 16px;
+  color: white;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  background: rgba(255, 107, 37, 0.37);
+  color: #292929;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+  background: rgba(240, 141, 0, 0.8);
+  color: white;
+  border-radius: 0 10px 0 0;
+  -webkit-border-radius: 0 10px 0 0;
+  -moz-border-radius: 0 10px 0 0;
+  -ms-border-radius: 0 10px 0 0;
+  -o-border-radius: 0 10px 0 0;
+}
+
+/* --------------------- */
+
+/* Tutorial Section */
+
+#tutorial {
+  padding: 115px 0;
+}
+
+.card {
+  background-color: #8f8f8f;
+  border-radius: 10px;
+  border: none;
+  height: 430px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.number-items {
+  font-weight: 700;
+  font-size: 40px;
+  margin-right: 10px;
+  margin-top: 0.5rem;
+  color: var(--sc-color);
+}
+
+.title-items {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.header-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.card:hover {
+  background: linear-gradient(211.97deg, #e02b0a 19.22%, #f04d00 54.4%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+/* Tutorial End */
+
+/* About Section */
+
+#tentang {
+  padding: 115px 0;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-profile {
+  width: 100%;
+  height: 200px;
+  margin: 0 15px;
+  background-color: #ffba57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.box-profile:hover {
+  background: #ffa524;
+  color: white;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.box-profile p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.box-desc {
+  background-color: #f08d00;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+
+.box-desc p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.box-desc span {
+  margin: 20px 0;
+  text-align: justify;
+  color: white;
+}
+
+/* About End */
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 120px;
+  background: #260701;
+}
+
+footer span {
+  color: white;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+footer p {
+  color: white;
+  font-style: italic;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+/* Footer End */

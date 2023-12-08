@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style>
+      .transaksi {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pesan">Belum ada transaksi yang dilakukan</div>
+    <table id="tabelTransaksi" class="transaksi">
+      <tr>
+        <th>Nama Barang</th>
+        <th>Tanggal Pinjam</th>
+        <th>Tanggal Kembali</th>
+      </tr>
+      <!-- Tambahkan baris transaksi di sini -->
+    </table>
+
+    <script>
+      // Fungsi untuk mengambil data transaksi dari sumber daya eksternal (seperti database)
+      function ambilDataTransaksi() {
+        // Simulasikan pengambilan data dengan menggunakan data sementara
+        var dataTransaksi = [
+          {
+            namaBarang: "Laptop",
+            tanggalPinjam: "2022-01-01",
+            tanggalKembali: "2022-01-03",
+          },
+          {
+            namaBarang: "Proyektor",
+            tanggalPinjam: "2022-02-01",
+            tanggalKembali: "2022-02-02",
+          },
+        ];
+
+        return dataTransaksi;
+      }
+
+      // Fungsi untuk memperbarui tampilan tabel transaksi
+      function tampilkanTransaksi() {
+        var dataTransaksi = ambilDataTransaksi();
+
+        // Cek apakah ada data transaksi
+        if (dataTransaksi.length === 0) {
+          document.getElementById("pesan").style.display = "block";
+          document.getElementById("tabelTransaksi").style.display = "none";
+        } else {
+          document.getElementById("pesan").style.display = "none";
+          document.getElementById("tabelTransaksi").style.display = "block";
+
+          // Tambahkan baris transaksi ke tabel
+          var tabel = document.getElementById("tabelTransaksi");
+          for (var i = 0; i < dataTransaksi.length; i++) {
+            var baris = tabel.insertRow();
+            var namaBarang = baris.insertCell();
+            namaBarang.innerHTML = dataTransaksi[i].namaBarang;
+            var tanggalPinjam = baris.insertCell();
+            tanggalPinjam.innerHTML = dataTransaksi[i].tanggalPinjam;
+            var tanggalKembali = baris.insertCell();
+            tanggalKembali.innerHTML = dataTransaksi[i].tanggalKembali;
+          }
+        }
+      }
+
+      // Tampilkan transaksi saat halaman selesai dimuat
+      window.onload = function () {
+        tampilkanTransaksi();
+      };
+    </script>
+  </body>
+</html>
